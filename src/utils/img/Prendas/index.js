@@ -1,3 +1,4 @@
+import Toalla from './toalla.png';
 import Abrigo from './abrigo.png';
 import Alfombra from './alfombra.png';
 import Almohada from './almohada.png';
@@ -37,6 +38,7 @@ import Sabritas from './sabritas.png';
 import Paletas from './paletas.png';
 
 const Prendas = {
+  Toalla,
   Abrigo,
   Alfombra,
   Almohada,
