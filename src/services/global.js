@@ -14,7 +14,8 @@ export const politicaAbandono = {
   mGeneral: `despues de entregada a la lavanderia; vencido el plazo se donara a instituciones de caridad.No hay lugar a
    reclamo una ves retirada la prenda No nos reposabilizamos por prendas que se destiñan por malos tintes, botones o adornos 
    que no resistan al lavado o planchado, por las prendas que se deterioren por estar demasiado usadas, tejidos y confecciones defectuosas.
-    La indemnización por ropa perdida o malograda se ajusta de acuerdo a la ley de Profeco que equivale a 3 veces del valor de la nota total de venta.`,
+  La indemnización por ropa perdida o malograda se ajusta de acuerdo a la ley de Profeco que equivale a 3 veces del valor de la nota total de venta.`,
+  mExtra: `Este contrato fue aprobado y registrado por la Procuraduría Federal del Consumidor bajo el número 9002-2023, Expediente PFC.B.E.7/009714-2023, de fecha 18 de octubre de 2023`,
 };
 
 export const documento = 'INE'; // DNI

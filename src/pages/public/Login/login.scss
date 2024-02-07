@@ -16,20 +16,9 @@ $input-placeholder-states:
     display: grid;
     place-items: center;
     .logo {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        display: block;
-        z-index: 100;
-        transition: all 250ms linear;
-        border-radius: 20px;
-        background: rgba(194, 194, 194, 0.631372549);
-        padding: 10px;
-        img {
-            height: 64px;
-            width: auto;
-            display: block;
-        }
+        width: 220px;
+        height: 100px;
+        fill: #fff;
     }
     a {
         cursor: pointer;
@@ -97,7 +86,7 @@ $input-placeholder-states:
         }
         .card-3d-wrap {
             position: relative;
-            width: 440px;
+            width: 450px;
             max-width: 100%;
             height: 400px;
             -webkit-transform-style: preserve-3d;
@@ -141,12 +130,15 @@ $input-placeholder-states:
                     padding: 0 35px;
                     top: 50%;
                     left: 0;
-                    transform: translate3d(0, -50%, 35px) perspective(100px);
+                    transform: translate3d(0, -50%, 0) perspective(100px);
                     z-index: 20;
-                    display: block;
+                    display: grid;
+                    grid-template-rows: 120px 280px;
+                    align-items: center;
+                    place-items: center;
                     .section {
                         position: relative;
-                        width: 100%;
+                        width: 80%;
                         display: grid;
                         gap: 10px;
                         h4 {
@@ -154,6 +146,8 @@ $input-placeholder-states:
                             font-size: 30px;
                             margin: 0;
                             color: #fff;
+                            border-top: 2px #fff solid;
+                            text-align: center;
                         }
                         .form-group {
                             position: relative;
@@ -212,6 +206,7 @@ $input-placeholder-states:
                             font-weight: 500;
                             font-size: 14px;
                             line-height: 1.7;
+                            text-align: center;
                             .link {
                                 color: #c4c3ca;
                                 &:hover {

@@ -7,7 +7,7 @@ import './ticket.scss';
 
 import Pet from './pet.jpg';
 import AhorroPet from './petAhorro.jpg';
-// import { ReactComponent as Logo } from '../../../../../../../utils/img/Logo/logoMasterClean.svg';
+import { ReactComponent as Logo } from '../../../../../../../utils/img/Logo/logoEvergreen.svg';
 
 import moment from 'moment';
 import axios from 'axios';
@@ -115,8 +115,12 @@ const Ticket = React.forwardRef((props, ref) => {
           <div className="body-orden-service">
             <div className="receipt_header">
               <div className="name-bussiness">
-                <h1 className="title">LAVANDERIA</h1>
-                <h1 className="name">{InfoNegocio?.name}</h1>
+                <Logo className="img-logo" />
+                <div className="data-text">
+                  {/* <h1>LAVANDERIA</h1>
+                  <h1 className="name">{InfoNegocio?.name}</h1> */}
+                  <span>telf : {InfoNegocio?.numero?.info}</span>
+                </div>
               </div>
               <table className="info-table">
                 <tbody>
@@ -288,6 +292,9 @@ const Ticket = React.forwardRef((props, ref) => {
             <p className="aviso">
               NOTA: <span>{politicaAbandono.mResaltado}</span>
               {politicaAbandono.mGeneral}
+            </p>
+            <p className="aviso">
+              <span>{politicaAbandono.mExtra}</span>
             </p>
           </div>
           {listPromos.length > 0 ? (

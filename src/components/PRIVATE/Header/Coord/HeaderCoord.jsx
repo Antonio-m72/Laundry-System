@@ -4,6 +4,7 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { PrivateRoutes, Roles } from '../../../../models/index';
+import { ReactComponent as Logo } from '../../../../utils/img/Logo/logoEvergreen.svg';
 import Logout from '../../Logout/Logout';
 import './headerCoord.scss';
 import { oldRecords } from '../../../../services/global';
@@ -116,9 +117,8 @@ const HeaderUser = () => {
   return (
     <header className="header-general">
       <div className="logo">
-        {/* <div className={`logo ${userState.rol === Roles.ADMIN ? 'admin-style' : 'coord-style'}`}> */}
-        {/* <img src={INFO_COMPANY.logo_dir} alt="" /> */}
-        <h1>{InfoNegocio?.name}</h1>
+        <Logo className="svg-logo" />
+        {/* <h1>{InfoNegocio?.name}</h1> */}
       </div>
       <button type="button" className="hamburger" onClick={toggleNavBar}>
         <div className="line" />

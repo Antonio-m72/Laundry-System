@@ -12,6 +12,7 @@ import { modals } from '@mantine/modals';
 
 import { persistLocalStorage } from '../../../utils/persistence.local-storage/localStorage.util';
 import './login.scss';
+import { ReactComponent as Logo } from '../../../utils/img/Logo/logoEvergreen.svg';
 import axios from 'axios';
 
 import { GetInfoUser } from '../../../redux/actions/aUser';
@@ -130,12 +131,14 @@ const Login = () => {
 
   return (
     <>
+      {/* <ParticlesBackgound /> */}
       <div className="container-login">
         <div className="full-height">
           <div className="card-3d-wrap">
             <div className="card-3d-wrapper">
               <div className="card-front">
                 <div className="center-wrap">
+                  <Logo className="logo" />
                   <form onSubmit={handleLogin} className="section">
                     <h4>Iniciar Sesion</h4>
                     <div className="form-group">

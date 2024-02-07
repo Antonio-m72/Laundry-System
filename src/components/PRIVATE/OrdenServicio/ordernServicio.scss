@@ -22,9 +22,9 @@
                 justify-content: space-between;
                 .info-t {
                     display: flex;
-                    .ico-lava-ya {
-                        width: 100px;
-                        height: 110px;
+                    .ico-logo {
+                        width: 260px;
+                        height: 144px;
                         fill: #7a7dbb;
                     }
                     .title {
@@ -66,7 +66,8 @@
                     border-radius: 4px;
                     text-align: center;
                     padding: 10px;
-
+                    height: min-content;
+                    margin: auto 10px;
                     h2 {
                         margin: 0;
                         font-family: "Arial";
