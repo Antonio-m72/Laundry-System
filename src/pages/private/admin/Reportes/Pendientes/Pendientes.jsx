@@ -100,6 +100,7 @@ const Pendientes = () => {
       Modalidad: d.Modalidad,
       Producto: handleProductoCantidad(d.Producto),
       DetalleProducto: d.Producto,
+      attendedBy: d.attendedBy,
       totalNeto: d.totalNeto,
       Celular: d.celular,
       Pago: d.Pago,

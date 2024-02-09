@@ -28,14 +28,19 @@ const {
   SacoLargo,
   Tapete,
   Zapatillas,
-  // Edredon,
-  Peluche,
+  Edredon,
+  // Peluche,
   Hamaca,
   CubreColchon,
   Funda,
   LavadoMano,
   Sabanas,
   Planchado,
+  Gancho,
+  Lavar,
+  Secar,
+  VestidoLargo,
+  Terno,
 } = Prendas;
 
 const SelectItem = forwardRef(({ image, label, ...others }, ref) => (
@@ -85,8 +90,88 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
       },
       {
         image: LavadoMano,
-        label: 'Lavado a Mano',
-        value: ['Lavado a Mano', getPricePrenda(productosDB, 'Lavado a Mano'), false],
+        label: 'Desmanchado a Mano',
+        value: ['Desmanchado a Mano', getPricePrenda(productosDB, 'Desmanchado a Mano'), false],
+      },
+      {
+        image: Edredon,
+        label: 'Edredon Matrimonial',
+        value: ['Edredon Matrimonial', getPricePrenda(productosDB, 'Edredon Matrimonial'), false],
+      },
+      {
+        image: Edredon,
+        label: 'Edredon Queen',
+        value: ['Edredon Queen', getPricePrenda(productosDB, 'Edredon Queen'), false],
+      },
+      {
+        image: Cobertor,
+        label: 'Cobertor Ind',
+        value: ['Cobertor Ind', getPricePrenda(productosDB, 'Cobertor Ind'), false],
+      },
+      {
+        image: Cobertor,
+        label: 'Cobertor Mat',
+        value: ['Cobertor Mat', getPricePrenda(productosDB, 'Cobertor Mat'), false],
+      },
+      {
+        image: Cobertor,
+        label: 'Cobertor Queen',
+        value: ['Cobertor Queen', getPricePrenda(productosDB, 'Cobertor Queen'), false],
+      },
+      {
+        image: Cobertor,
+        label: 'Cobertor King',
+        value: ['Cobertor King', getPricePrenda(productosDB, 'Cobertor King'), false],
+      },
+      {
+        image: Planchado,
+        label: 'Planchado por Docena',
+        value: ['Planchado por Docena', getPricePrenda(productosDB, 'Planchado por Docena'), false],
+      },
+      {
+        image: Planchado,
+        label: 'Planchado por Pieza',
+        value: ['Planchado por Pieza', getPricePrenda(productosDB, 'Planchado por Pieza'), false],
+      },
+      {
+        image: Gancho,
+        label: 'Gancho Metalico',
+        value: ['Gancho Metalico', getPricePrenda(productosDB, 'Gancho Metalico'), false],
+      },
+      {
+        image: Edredon,
+        label: 'Edredon de Pluma/Grueso',
+        value: ['Edredon de Pluma/Grueso', getPricePrenda(productosDB, 'Edredon de Pluma/Grueso'), false],
+      },
+      {
+        image: Lavar,
+        label: 'Lavado 10kg',
+        value: ['Lavado 10kg', getPricePrenda(productosDB, 'Lavado 10kg'), false],
+      },
+      {
+        image: Secar,
+        label: 'Secado 10kg',
+        value: ['Secado 10kg', getPricePrenda(productosDB, 'Secado 10kg'), false],
+      },
+      {
+        image: Lavar,
+        label: 'Autosevicio Lavado 10kg',
+        value: ['Autosevicio Lavado 10kg', getPricePrenda(productosDB, 'Autosevicio Lavado 10kg'), false],
+      },
+      {
+        image: Lavar,
+        label: 'Autosevicio Lavado 18kg',
+        value: ['Autosevicio Lavado 18kg', getPricePrenda(productosDB, 'Autosevicio Lavado 18kg'), false],
+      },
+      {
+        image: VestidoLargo,
+        label: 'Vestido Largos',
+        value: ['Vestido Largos', getPricePrenda(productosDB, 'Vestido Largos'), false],
+      },
+      {
+        image: Terno,
+        label: 'Trajes de 2 Piezas',
+        value: ['Trajes de 2 Piezas', getPricePrenda(productosDB, 'Trajes de 2 Piezas'), false],
       },
       {
         image: Hamaca,
@@ -108,11 +193,11 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         label: 'Cubre colchon',
         value: ['Cubre colchon', getPricePrenda(productosDB, 'Cubre colchon'), false],
       },
-      {
-        image: Peluche,
-        label: 'Peluche',
-        value: ['Peluche', getPricePrenda(productosDB, 'Peluche'), false],
-      },
+      // {
+      //   image: Peluche,
+      //   label: 'Peluche',
+      //   value: ['Peluche', getPricePrenda(productosDB, 'Peluche'), false],
+      // },
       {
         image: Polo,
         label: 'Playera',

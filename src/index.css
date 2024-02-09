@@ -96,3 +96,7 @@ li {
   display: grid;
   place-content: center;
 }
+
+.mantine-Select-dropdown {
+  width: max-content !important;
+}

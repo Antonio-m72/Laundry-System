@@ -240,7 +240,7 @@ const Almacen = () => {
       Modalidad: info.Modalidad,
       Producto: handleProductoCantidad(info.Producto),
       DetalleProducto: info.Producto,
-      //cantidad: handleCantidad(d.Producto),
+      attendedBy: info.attendedBy,
       totalNeto: `${simboloMoneda} ${info.totalNeto}`,
       Celular: info.celular,
       Pago: info.Pago,

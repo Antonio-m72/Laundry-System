@@ -54,6 +54,7 @@ import { socket } from '../../utils/socket/connect';
 import { LS_newDelivery, LS_updateDelivery } from '../../redux/states/delivery';
 import { GetLastCuadre } from '../../redux/actions/aCuadre';
 import { updateLastCuadre } from '../../redux/states/cuadre';
+import { GetListUser } from '../../redux/actions/aUser';
 
 const PrivateMasterLayout = (props) => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -75,6 +76,7 @@ const PrivateMasterLayout = (props) => {
   const infoPuntos = useSelector((state) => state.modificadores.InfoPuntos);
   const infoPromocion = useSelector((state) => state.promocion.infoPromocion);
   const infoNegocio = useSelector((state) => state.negocio.infoNegocio);
+  const ListUsuarios = useSelector((state) => state.user.listUsuario);
 
   const [loading, setLoading] = useState(true);
 
@@ -137,6 +139,10 @@ const PrivateMasterLayout = (props) => {
 
           if (Object.keys(infoNegocio).length === 0) {
             promises.push(dispatch(GetInfoNegocio()));
+          }
+
+          if (ListUsuarios.length === 0) {
+            promises.push(dispatch(GetListUser()));
           }
 
           // Esperar a que todas las promesas se resuelvan

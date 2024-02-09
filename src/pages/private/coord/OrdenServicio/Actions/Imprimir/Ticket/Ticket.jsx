@@ -173,9 +173,15 @@ const Ticket = React.forwardRef((props, ref) => {
                 <div className="i-cliente">
                   <table className="tb-info-cliente">
                     <tbody>
+                      {infoOrden.celular ? (
+                        <tr>
+                          <td>Telefono : </td>
+                          <td>&nbsp;&nbsp;{infoOrden.celular}</td>
+                        </tr>
+                      ) : null}
                       <tr>
-                        <td>Telefono : </td>
-                        <td>&nbsp;&nbsp;{infoOrden.celular}</td>
+                        <td>Atentido por : </td>
+                        <td>&nbsp;&nbsp;{infoOrden.attendedBy.name}</td>
                       </tr>
                     </tbody>
                   </table>
