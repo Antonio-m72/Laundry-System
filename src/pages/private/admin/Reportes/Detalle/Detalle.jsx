@@ -63,17 +63,17 @@ const Detalle = ({ infoD }) => {
     return hora12;
   };
 
+  const handleInfoUser = (idUser) => {
+    // console.log(idUser);
+    const usuario = ListUsuarios.find((usuario) => usuario._id === idUser);
+    return usuario ? usuario.name.split(' ')[0] : 'No Encontrado';
+  };
+
   useEffect(() => {
     if (ordern?.Modalidad === 'Delivery') {
       dispatch(GetDeliverysID(ordern._id));
     }
   }, [ordern]);
-
-  const handleInfoUser = (idUser) => {
-    // console.log(idUser);
-    const usuario = ListUsuarios.find((usuario) => usuario._id === idUser);
-    return usuario ? usuario.name : 'No Encontrado';
-  };
 
   useEffect(() => {
     setOrder(infoD);
@@ -179,7 +179,7 @@ const Detalle = ({ infoD }) => {
             <span>Atendido por :</span>
           </div>
           <div className="monto">
-            <span>{ordern?.attendedBy.name}</span>
+            <span>{ordern?.attendedBy.name.split(' ')[0]}</span>
           </div>
         </div>
         {ordern?.Factura === true ? (

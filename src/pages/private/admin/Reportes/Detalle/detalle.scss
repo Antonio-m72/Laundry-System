@@ -224,10 +224,14 @@
     }
     .list-pagos {
         position: relative;
+        width: max-content;
+        min-width: 500px;
+        display: grid;
+        place-items: center;
         .title {
-            text-align: center;
             position: absolute;
             top: -7px;
+            text-align: center;
             width: 300px;
             background: #7b7b7b;
             color: #fff;
@@ -240,6 +244,7 @@
             border-radius: 20px;
             display: grid;
             gap: 10px;
+            min-width: 500px;
             li {
                 display: grid;
                 grid-template-columns: 25px max-content 70px 80px 110px 30px;

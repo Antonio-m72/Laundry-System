@@ -13,7 +13,8 @@
     button {
         position: relative;
         height: 50px;
-        width: 130px;
+        padding: 0 10px;
+        width: min-content;
         font-size: 13px;
         letter-spacing: 1px;
         border-radius: 5px;
@@ -265,6 +266,15 @@
                 padding: 8px;
                 border: 1px solid #ccc;
             }
+
+            tr {
+                td {
+                    &:first-child {
+                        width: max-content;
+                    }
+                }
+            }
+
             .md-pago {
                 position: absolute;
                 right: 0px;
@@ -284,6 +294,10 @@
         }
         .list-pagos {
             position: relative;
+            width: max-content;
+            min-width: 500px;
+            display: grid;
+            place-items: center;
             .title {
                 position: absolute;
                 top: -7px;
@@ -300,6 +314,7 @@
                 border-radius: 20px;
                 display: grid;
                 gap: 10px;
+                min-width: 500px;
                 li {
                     display: grid;
                     grid-template-columns: 25px max-content 70px 80px 110px 30px;

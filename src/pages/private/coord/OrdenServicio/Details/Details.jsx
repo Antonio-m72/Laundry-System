@@ -47,7 +47,7 @@ const Details = ({ IdCliente }) => {
 
   const handleInfoUser = (idUser) => {
     const usuario = ListUsuarios.find((usuario) => usuario._id === idUser);
-    return usuario ? usuario.name : 'No Encontrado';
+    return usuario ? usuario.name.split(' ')[0] : 'No Encontrado';
   };
 
   useEffect(() => {
@@ -188,7 +188,7 @@ const Details = ({ IdCliente }) => {
                 ) : null}
                 <tr>
                   <td>Atendido Por :</td>
-                  <td>{infoCliente.attendedBy.name}</td>
+                  <td>{infoCliente.attendedBy.name.split(' ')[0]}</td>
                 </tr>
               </tbody>
             </table>
