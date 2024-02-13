@@ -145,23 +145,23 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
       },
       {
         image: Lavar,
-        label: 'Lavado 10kg',
-        value: ['Lavado 10kg', getPricePrenda(productosDB, 'Lavado 10kg'), false],
+        label: 'Autosevicio de Lavado 10kg',
+        value: ['Autosevicio de Lavado 10kg', getPricePrenda(productosDB, 'Autosevicio de Lavado 10kg'), false],
       },
       {
         image: Secar,
-        label: 'Secado 10kg',
-        value: ['Secado 10kg', getPricePrenda(productosDB, 'Secado 10kg'), false],
+        label: 'Autosevicio de Secado 10kg',
+        value: ['Autosevicio de Secado 10kg', getPricePrenda(productosDB, 'Autosevicio de Secado 10kg'), false],
       },
       {
         image: Lavar,
-        label: 'Autosevicio Lavado 10kg',
-        value: ['Autosevicio Lavado 10kg', getPricePrenda(productosDB, 'Autosevicio Lavado 10kg'), false],
+        label: 'Autosevicio de Lavado 18kg',
+        value: ['Autosevicio de Lavado 18kg', getPricePrenda(productosDB, 'Autosevicio de Lavado 18kg'), false],
       },
       {
-        image: Lavar,
-        label: 'Autosevicio Lavado 18kg',
-        value: ['Autosevicio Lavado 18kg', getPricePrenda(productosDB, 'Autosevicio Lavado 18kg'), false],
+        image: Secar,
+        label: 'Autosevicio de Secado 18kg',
+        value: ['Autosevicio de Secado 18kg', getPricePrenda(productosDB, 'Autosevicio de Secado 18kg'), false],
       },
       {
         image: VestidoLargo,
