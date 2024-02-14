@@ -143,25 +143,25 @@ const InputSelectedPrenda = ({ listenClick, tabI, disabled }) => {
         label: 'Edredon de Pluma/Grueso',
         value: ['Edredon de Pluma/Grueso', getPricePrenda(productosDB, 'Edredon de Pluma/Grueso'), false],
       },
+      // {
+      //   image: Lavar,
+      //   label: 'Lavado 10kg',
+      //   value: ['Lavado 10kg', getPricePrenda(productosDB, 'Lavado 10kg'), false],
+      // },
+      // {
+      //   image: Secar,
+      //   label: 'Secado 10kg',
+      //   value: ['Secado 10kg', getPricePrenda(productosDB, 'Secado 10kg'), false],
+      // },
       {
         image: Lavar,
-        label: 'Autosevicio de Lavado 10kg',
-        value: ['Autosevicio de Lavado 10kg', getPricePrenda(productosDB, 'Autosevicio de Lavado 10kg'), false],
+        label: 'Lavado 18kg',
+        value: ['Lavado 18kg', getPricePrenda(productosDB, 'Lavado 18kg'), false],
       },
       {
         image: Secar,
-        label: 'Autosevicio de Secado 10kg',
-        value: ['Autosevicio de Secado 10kg', getPricePrenda(productosDB, 'Autosevicio de Secado 10kg'), false],
-      },
-      {
-        image: Lavar,
-        label: 'Autosevicio de Lavado 18kg',
-        value: ['Autosevicio de Lavado 18kg', getPricePrenda(productosDB, 'Autosevicio de Lavado 18kg'), false],
-      },
-      {
-        image: Secar,
-        label: 'Autosevicio de Secado 18kg',
-        value: ['Autosevicio de Secado 18kg', getPricePrenda(productosDB, 'Autosevicio de Secado 18kg'), false],
+        label: 'Secado 18kg',
+        value: ['Secado 18kg', getPricePrenda(productosDB, 'Secado 18kg'), false],
       },
       {
         image: VestidoLargo,

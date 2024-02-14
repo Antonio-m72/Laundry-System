@@ -889,24 +889,35 @@ const OrdenServicio = ({ mode, action, onAction, iEdit, onReturn, iDelivery }) =
             <div className="actions">
               <div className="button-actions">
                 <BotonModel
-                  name="Agregar Edredon"
+                  name="Ropa x Kilo"
                   tabI="7"
                   disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
                   listenClick={() =>
                     formik.setFieldValue('productos', [
                       ...formik.values.productos,
-                      addRowGarment('Edredon', getPricePrenda('Edredon'), false),
+                      addRowGarment('Ropa x Kilo', getPricePrenda('Ropa x Kilo'), false),
                     ])
                   }
                 />
                 <BotonModel
-                  name="Ropa x Kilo"
+                  name="Lavado 10kg"
                   tabI="8"
                   disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
                   listenClick={() =>
                     formik.setFieldValue('productos', [
                       ...formik.values.productos,
-                      addRowGarment('Ropa x Kilo', getPricePrenda('Ropa x Kilo'), false),
+                      addRowGarment('Lavado 10kg', getPricePrenda('Lavado 10kg'), false),
+                    ])
+                  }
+                />
+                <BotonModel
+                  name="Secado 10kg"
+                  tabI="9"
+                  disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
+                  listenClick={() =>
+                    formik.setFieldValue('productos', [
+                      ...formik.values.productos,
+                      addRowGarment('Secado 10kg', getPricePrenda('Secado 10kg'), false),
                     ])
                   }
                 />
@@ -919,7 +930,7 @@ const OrdenServicio = ({ mode, action, onAction, iEdit, onReturn, iDelivery }) =
                   ])
                 }
                 disabled={iEdit ? (iEdit.modeEditAll ? false : true) : false}
-                tabI={'9'}
+                tabI={'10'}
               />
             </div>
             <table className="tb-prod">
