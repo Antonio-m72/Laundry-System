@@ -201,20 +201,17 @@
 
             .description-info {
                 width: max-content;
-                margin: 15px;
-                display: grid;
-                place-items: center;
+                margin: 15px auto;
                 .actions {
                     display: flex;
                     justify-content: space-between;
-                    gap: 50px;
                     .mantine-Select-root {
                         position: relative;
                         padding-bottom: 20px;
                     }
                     .button-actions {
                         display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-columns: auto 1fr;
                         gap: 8px;
                         margin: auto 0;
                         button {
