@@ -191,14 +191,14 @@ const Negocio = () => {
                 <MultiSelect
                   name="itemsAtajos"
                   size="sm"
-                  label="Items de Atajos (2 max) :"
+                  label="Items de Atajos (3 max) :"
                   value={formik.values.itemsAtajos}
                   onChange={(e) => {
                     formik.setFieldValue("itemsAtajos", e);
                   }}
                   placeholder="Escoge categoría"
                   clearable
-                  maxSelectedValues={2}
+                  maxSelectedValues={3}
                   searchable
                   data={getListServices(InfoServicios)}
                   maxDropdownHeight={150}

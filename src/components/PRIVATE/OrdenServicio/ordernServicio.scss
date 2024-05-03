@@ -343,7 +343,7 @@
           justify-content: space-between;
           .button-actions {
             display: grid;
-            grid-template-columns: auto 1fr;
+            grid-template-columns: auto auto auto;
             gap: 8px;
             margin: auto 0;
             button {

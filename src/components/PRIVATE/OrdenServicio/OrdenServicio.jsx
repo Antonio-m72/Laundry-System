@@ -1186,7 +1186,6 @@ const OrdenServicio = ({
                         <BotonModel
                           key={index}
                           name={`Agregar ${IService?.nombre}`}
-                          // tabI="7"
                           disabled={
                             iEdit ? (iEdit.modeEditAll ? false : true) : false
                           }
