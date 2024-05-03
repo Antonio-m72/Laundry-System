@@ -213,7 +213,7 @@ const Ticket = React.forwardRef((props, ref) => {
                 <table className="tb-date">
                   <tbody>
                     <tr>
-                      <td>Recojo:</td>
+                      <td>Ingreso:</td>
                       <td>
                         <div className="date-time">
                           {sizePaper80 ? (
