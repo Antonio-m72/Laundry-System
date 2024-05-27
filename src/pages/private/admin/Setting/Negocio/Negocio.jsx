@@ -375,7 +375,7 @@ const Negocio = () => {
                       }}
                       placeholder="Escoge categoría"
                       clearable
-                      maxSelectedValues={2}
+                      maxSelectedValues={3}
                       searchable
                       data={getListServices(InfoServicios)}
                       maxDropdownHeight={150}
