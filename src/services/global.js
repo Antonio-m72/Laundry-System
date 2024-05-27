@@ -1,7 +1,7 @@
 // Zona Horaria
 export const timeZone = "America/Merida";
 // Factura
-export const showFactura = false;
+export const showFactura = true;
 // Tipo de Moneda
 export const tipoMoneda = "MXN";
 // Formato de la moneda (separacion de miles - decimales) segun la configuracion regional
