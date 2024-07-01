@@ -1,5 +1,7 @@
 // Zona Horaria
 export const timeZone = "America/Merida";
+// Default Hora Prevista
+export const defaultHoraPrevista = "18:00";
 // Factura
 export const showFactura = true;
 // Tipo de Moneda
